@@ -2,8 +2,9 @@ name: EssentialReplace
 main: io.github.sweetenpotato.Main
 version: 1.0.0
 description: The soft version of Essential
-author: sweetenpotato
+api-version: 1.15.2
+authors: [sweetenpotato]
 commands:
   spawn:
-    description: Moved to spawn
+    description: Move to spawn.
     usage: /spawn
