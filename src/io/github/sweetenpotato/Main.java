@@ -69,11 +69,18 @@ public class Main extends JavaPlugin {
 				if (args.length < 1) {
 					sender.sendMessage(
 							yellow + "------------" + green + "[EssentialReplace]" + yellow + "------------");
-					sender.sendMessage(chat_prefix + chat_info + aqua + "Plugin Name : " + pdFile.getName());
-					sender.sendMessage(chat_prefix + chat_info + aqua + "Plugin Version : " + pdFile.getVersion());
-					sender.sendMessage(chat_prefix + chat_info + aqua + "Minecraft Version : " + pdFile.getAPIVersion());
-					sender.sendMessage(chat_prefix + chat_info + aqua + "Author : " + pdFile.getAuthors());
-					sender.sendMessage(chat_prefix + chat_info + aqua + "Please type " + yellow + "/es help" + "");
+					sender.sendMessage(chat_prefix + chat_info + blue + "플러그인 이름 : " + pdFile.getName());
+					sender.sendMessage(chat_prefix + chat_info + blue + "플러그인 버전 : " + pdFile.getVersion());
+					sender.sendMessage(chat_prefix + chat_info + blue + "마인크래프트 버전 : " + pdFile.getAPIVersion());
+					sender.sendMessage(chat_prefix + chat_info + blue + "개발자 : " + pdFile.getAuthors());
+					sender.sendMessage(chat_prefix + chat_info + blue + "EssentialReplace의 명령어 목록을 보시려면 " + yellow
+							+ "/es help " + blue + "을 입력해 주세요.");
+				} else {
+					if (args[0].equalsIgnoreCase("help")) {
+						sender.sendMessage(
+								yellow + "------------" + green + "[EssentialReplace]" + yellow + "------------");
+						sender.sendMessage(chat_prefix + chat_info + blue + "/reload" + green + " : 플러그인을 다시 불러옵니다." );
+					}
 				}
 				return true;
 			} else {
