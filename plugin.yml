@@ -1,5 +1,9 @@
 name: EssentialReplace
-main: sweetenpotato.essential.core.Main
+main: io.github.sweetenpotato.Main
 version: 1.0.0
 description: The soft version of Essential
 author: sweetenpotato
+commands:
+  spawn:
+    description: Moved to spawn
+    usage: /spawn
