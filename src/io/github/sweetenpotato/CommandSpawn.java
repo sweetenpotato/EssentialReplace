@@ -49,7 +49,6 @@ public class CommandSpawn implements CommandExecutor {
 			sender.sendMessage(dos_prefix + "이 명령어는 콘솔에서는 사용할 수 없는 명령어입니다.");
 			return true;
 		}
-		return false;
 	}
 
 }
