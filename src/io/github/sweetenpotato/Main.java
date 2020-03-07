@@ -70,6 +70,5 @@ public class Main extends JavaPlugin {
 	public void cmd() {
 		getCommand("es").setExecutor(new CommandEs());
 	}
-	
-	public
+
 }
