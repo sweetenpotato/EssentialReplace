@@ -12,6 +12,8 @@ public class CommandSpawn implements CommandExecutor {
 		
 		if (sender instanceof Player) {
 			if (args.length <1) {
+				Player player = (Player) sender;
+				player.teleport(player.getWorld().getSpawnLocation());
 				sender.sendMessage(Prefix.chat_prefix + Prefix.green + "스폰으로 이동하였습니다.");
 			}
 			else {

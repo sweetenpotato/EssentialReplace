@@ -7,3 +7,6 @@ commands:
   spawn:
     description: Move to spawn.
     usage: /spawn
+  es:
+    description: about es
+    usage: /es

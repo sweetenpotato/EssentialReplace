@@ -1,12 +1,12 @@
 package io.github.sweetenpotato;
 
 import java.util.logging.Logger;
+
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
-import io.github.sweetenpotato.Prefix;
 
-public class Main extends JavaPlugin{
-	
+public class Main extends JavaPlugin {
+
 	PluginDescriptionFile pdFile = this.getDescription();
 	String dos_plname = pdFile.getName() + "";
 	String dos_plvers = " version : " + pdFile.getVersion() + "";
@@ -24,8 +24,7 @@ public class Main extends JavaPlugin{
 		getCommand("es").setExecutor(new CommandEs());
 		if (plugin_on) {
 			cmd();
-		}
-		else {
+		} else {
 		}
 	}
 
@@ -37,7 +36,7 @@ public class Main extends JavaPlugin{
 	public void console(String msg) {
 		getLogger().info(msg);
 	}
-	
+
 	public void cmd() {
 		getCommand("spawn").setExecutor(new CommandSpawn());
 	}
